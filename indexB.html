@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortafolioB</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- BARRA DE OPCIONES -->
+    <nav>
+        <h2 class="logo"></h2>
+        <div class="bars">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#">Home</a></li>
+          <li class="nav-link"><a href="#">About</a></li>
+          <li class="nav-link"><a href="#">Portafolio</a></li>
+          <li class="nav-link"><a href="#">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+    <!-- Imágenes de fondo -->
+    <div class="fondo-imagenes">
+        <img src="img/Imagen1.png" alt="">
+        <img src="img/Imagen2.png" alt="">
+        <img src="img/Imagen3.png" alt="">
+        <img src="img/Imagen4.png" alt="">
+        <img src="img/Imagen5.png" alt="">
+    </div>
+
+    <!-- Script para toggle del menú -->
+    <script>
+        const bars = document.querySelector(".bars");
+        const nav = document.querySelector("nav");
+
+        bars.onclick = () => {
+            nav.classList.toggle("active");
+        };
+    </script>
+
+
+  <script>
+
+
+    // Crear audio
+    const sonido = new Audio("sounds/windows.mp3");
+
+    // Manejar click en toda la página
+    document.body.addEventListener("click", (e) => {
+      // Reproducir sonido
+      sonido.currentTime = 0; // Reinicia si ya está sonando
+      sonido.play();
+
+      // Crear imagen
+      const img = document.createElement("img");
+      img.src = "imgPop/TryError.png";
+      img.style.position = "absolute";
+      img.style.width = "100px";
+      img.style.left = `${e.clientX - 50}px`; // centra la imagen en el click
+      img.style.top = `${e.clientY - 50}px`;
+      img.style.pointerEvents = "none"; // evita que interfiera con más clicks
+      img.style.zIndex = "9999";
+      img.style.transition = "transform 0.5s, opacity 0.5s";
+      
+      document.body.appendChild(img);
+
+      // Eliminar del DOM luego de 1 segundo
+      setTimeout(() => {
+        img.remove();
+      }, 10000);
+    });
+
+
+
+    let clickCount = 0;
+const maxClicks = 5;
+
+document.body.addEventListener("click", (e) => {
+  clickCount++;
+
+  // Reproducir sonido y mostrar imagen como ya lo tenés
+
+  if (clickCount === maxClicks) {
+    mostrarPopup();
+    clickCount = 0; // Resetea el contador para que vuelva a aparecer luego de otros 5 clics
+  }
+});
+
+function mostrarPopup() {
+  // Crear contenedor
+  const popup = document.createElement("div");
+  popup.style.position = "fixed";
+  popup.style.top = "50%";
+  popup.style.left = "50%";
+  popup.style.transform = "translate(-50%, -50%)";
+  popup.style.background = "#fff";
+  popup.style.padding = "2rem";
+  popup.style.borderRadius = "10px";
+  popup.style.boxShadow = "0 0 20px rgba(0,0,0,0.3)";
+  popup.style.zIndex = "99999";
+  popup.id = "popup";
+
+  // Crear botón
+  const boton = document.createElement("button");
+  boton.textContent = "Cerrar";
+  boton.style.padding = "0.5rem 1rem";
+  boton.style.fontSize = "16px";
+  boton.style.cursor = "pointer";
+  boton.onclick = () => popup.remove();
+
+  popup.appendChild(boton);
+  document.body.appendChild(popup);
+}
+
+
+  </script>
+
+
+</body>
+</html>
