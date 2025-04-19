@@ -299,3 +299,72 @@ body::-webkit-scrollbar {
     right: 0;
   }
 }
+
+
+.glitch {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: #b60101; /* Color blanco al activarse el glitch */
+  letter-spacing: 3px;
+  z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.glitch:before {
+  animation: glitch-it 0.2s ease-in-out infinite both;
+  color: #00fff2;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch-it 0.2s ease-in-out infinite reverse both;
+  color: #ff00ff;
+  z-index: -2;
+}
+
+@keyframes glitch-it {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-5px, 5px);
+  }
+  20% {
+    transform: translate(5px, -5px);
+  }
+  30% {
+    transform: translate(-6px, -6px);
+  }
+  40% {
+    transform: translate(4px, 3px);
+  }
+  50% {
+    transform: translate(-6px, 4px);
+  }
+  60% {
+    transform: translate(5px, -4px);
+  }
+  70% {
+    transform: translate(-4px, 3px);
+  }
+  80% {
+    transform: translate(5px, -6px);
+  }
+  90% {
+    transform: translate(-4px, 5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+

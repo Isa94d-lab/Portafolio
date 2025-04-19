@@ -70,7 +70,7 @@
     const img = document.createElement("img");
     img.src = "img/imgPop/TryError.png"; // Ruta a la imagen
     img.style.position = "absolute";
-    img.style.width = "150px";
+    img.style.width = "180px";
     img.style.left = `${e.clientX - 50}px`; // Centrada en eje X
     img.style.top = `${e.clientY - 50}px`;  // Centrada en eje Y
     img.style.pointerEvents = "none"; // No interfiere con otros clicks
@@ -121,30 +121,38 @@
     popup.style.zIndex = "10"; // Encima del overlay
     popup.style.textAlign = "center";
 
+
+
+
+
+
+
+
+
+
+
+
     // Crear botón de cierre
     const boton = document.createElement("button");
     boton.className = "ui-btn";
-    boton.innerHTML = "<span>RESTART</span>";
+    boton.innerHTML = '<span data-text="RESTART">RESTART</span>';
 
-    // Activar efecto glitch al hacer clic
+    // Al hacer clic, activa la animación glitch y redirige después de 500ms
     boton.addEventListener("click", () => {
-      boton.classList.add("glitch-click");
+    const span = boton.querySelector("span");
+    
+    // Cambiar el color a blanco solo cuando inicie el glitch
+    span.style.color = "#fff"; // Cambia el color a blanco
+    
+    // Activamos el glitch añadiendo la clase
+    span.classList.add("glitch");
 
-      // Eliminar clase después del glitch para poder reusarla
-      setTimeout(() => {
-        boton.classList.remove("glitch-click");
-      }, 1000); // tiempo igual al de la animación (1s)
-    });
+    // Redirigir a la página después del efecto
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 300); // Tiempo del glitch (0.3s)
+  });
 
-    // Agregar al DOM
-    document.body.appendChild(boton);
-
-
-
-    // Escuchar el clic
-    boton.addEventListener("click", () => {
-        window.location.href = "index.html";
-    });
 
 
 
@@ -161,6 +169,7 @@
 }
 
   </script>
+
 
 
 </body>
