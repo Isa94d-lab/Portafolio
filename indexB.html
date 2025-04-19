@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortafolioB</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleB.css">
 
     <!-- Iconos Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,6 +33,7 @@
         <img src="img/Imagen3.png" alt="">
         <img src="img/Imagen4.png" alt="">
         <img src="img/Imagen5.png" alt="">
+        <img src="img/Imagen6.png" alt="">
     </div>
 
     <!-- Script para toggle del menú -->
@@ -49,76 +50,115 @@
   <script>
 
 
-    // Crear audio
-    const sonido = new Audio("sounds/windows.mp3");
+    // Crear audio para reproducir en cada click
+  const sonido = new Audio("sounds/windows.mp3");
 
-    // Manejar click en toda la página
-    document.body.addEventListener("click", (e) => {
-      // Reproducir sonido
-      sonido.currentTime = 0; // Reinicia si ya está sonando
-      sonido.play();
+  // Contador de clicks y límite
+  let clickCount = 0;
+  const maxClicks = 8;
 
-      // Crear imagen
-      const img = document.createElement("img");
-      img.src = "imgPop/TryError.png";
-      img.style.position = "absolute";
-      img.style.width = "100px";
-      img.style.left = `${e.clientX - 50}px`; // centra la imagen en el click
-      img.style.top = `${e.clientY - 50}px`;
-      img.style.pointerEvents = "none"; // evita que interfiera con más clicks
-      img.style.zIndex = "9999";
-      img.style.transition = "transform 0.5s, opacity 0.5s";
-      
-      document.body.appendChild(img);
+  // Manejar click en cualquier parte del body
+  document.body.addEventListener("click", (e) => {
+    // Incrementar contador
+    clickCount++;
 
-      // Eliminar del DOM luego de 1 segundo
+    // Reproducir sonido (reinicia si ya estaba sonando)
+    sonido.currentTime = 0;
+    sonido.play();
+
+    // Crear imagen en el punto del click
+    const img = document.createElement("img");
+    img.src = "img/imgPop/TryError.png"; // Ruta a la imagen
+    img.style.position = "absolute";
+    img.style.width = "150px";
+    img.style.left = `${e.clientX - 50}px`; // Centrada en eje X
+    img.style.top = `${e.clientY - 50}px`;  // Centrada en eje Y
+    img.style.pointerEvents = "none"; // No interfiere con otros clicks
+    img.style.zIndex = "9"; // Por encima de todo
+    img.style.transition = "transform 0.5s, opacity 0.5s";
+
+    // Agregar imagen al DOM
+    document.body.appendChild(img);
+
+    // Eliminar imagen después de 10 segundos
+    setTimeout(() => {
+      img.remove();
+    }, 20000);
+
+    // Mostrar popup si llega al número de clicks
+    if (clickCount === maxClicks) {
+      mostrarPopup();      // Llama la función del popup
+      clickCount = 0;      // Reinicia el contador
+    }
+  });
+
+  // Función para crear y mostrar el popup
+  function mostrarPopup() {
+    // Crear fondo oscuro que bloquea el contenido
+    const overlay = document.createElement("div");
+    overlay.id = "popup-overlay";
+    overlay.style.position = "fixed";
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = "100vw";
+    overlay.style.height = "100vh";
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.9)"; // Fondo oscuro
+    overlay.style.zIndex = "9";
+    overlay.style.display = "flex";
+    overlay.style.justifyContent = "center";
+    overlay.style.alignItems = "center";
+
+    // Evita que se propague el click al fondo (opcional)
+    overlay.addEventListener("click", (e) => e.stopPropagation());
+
+    // Crear contenedor del popup
+    const popup = document.createElement("div");
+    popup.id = "popup";
+    popup.style.background = "transparent";
+    popup.style.padding = "1rem";
+    popup.style.borderRadius = "10px";
+    popup.style.boxShadow = "0 0 20px rgba(0,0,0,0.5)";
+    popup.style.zIndex = "10"; // Encima del overlay
+    popup.style.textAlign = "center";
+
+    // Crear botón de cierre
+    const boton = document.createElement("button");
+    boton.className = "ui-btn";
+    boton.innerHTML = "<span>RESTART</span>";
+
+    // Activar efecto glitch al hacer clic
+    boton.addEventListener("click", () => {
+      boton.classList.add("glitch-click");
+
+      // Eliminar clase después del glitch para poder reusarla
       setTimeout(() => {
-        img.remove();
-      }, 10000);
+        boton.classList.remove("glitch-click");
+      }, 1000); // tiempo igual al de la animación (1s)
+    });
+
+    // Agregar al DOM
+    document.body.appendChild(boton);
+
+
+
+    // Escuchar el clic
+    boton.addEventListener("click", () => {
+        window.location.href = "index.html";
     });
 
 
 
-    let clickCount = 0;
-const maxClicks = 5;
 
-document.body.addEventListener("click", (e) => {
-  clickCount++;
 
-  // Reproducir sonido y mostrar imagen como ya lo tenés
 
-  if (clickCount === maxClicks) {
-    mostrarPopup();
-    clickCount = 0; // Resetea el contador para que vuelva a aparecer luego de otros 5 clics
-  }
-});
 
-function mostrarPopup() {
-  // Crear contenedor
-  const popup = document.createElement("div");
-  popup.style.position = "fixed";
-  popup.style.top = "50%";
-  popup.style.left = "50%";
-  popup.style.transform = "translate(-50%, -50%)";
-  popup.style.background = "#fff";
-  popup.style.padding = "2rem";
-  popup.style.borderRadius = "10px";
-  popup.style.boxShadow = "0 0 20px rgba(0,0,0,0.3)";
-  popup.style.zIndex = "99999";
-  popup.id = "popup";
+    // Agregar botón al popup y popup al overlay
+    popup.appendChild(boton);
+    overlay.appendChild(popup);
 
-  // Crear botón
-  const boton = document.createElement("button");
-  boton.textContent = "Cerrar";
-  boton.style.padding = "0.5rem 1rem";
-  boton.style.fontSize = "16px";
-  boton.style.cursor = "pointer";
-  boton.onclick = () => popup.remove();
-
-  popup.appendChild(boton);
-  document.body.appendChild(popup);
+    // Agregar el overlay (con popup) al body
+    document.body.appendChild(overlay);
 }
-
 
   </script>
 
