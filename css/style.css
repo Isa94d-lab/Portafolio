@@ -31,28 +31,35 @@ video {
   /* ----------------------------- CONTEINER 2 ----------------------------- */
 
   .conteiner2 {
-    background-color: #e2dcce;
-    font-style: normal;
     display: flex;
-    flex-direction: row;
-    padding-top: 400px;
-    padding-bottom: 170px;
+    flex-direction: column;
+    position: relative;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    background-color: #e2dcce;
   }
 
   .mini-conteiner2 {
-    margin-left: 20%; 
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+  }
+
+  .mini-conteiner2-2 {
+    margin-left: 22%; 
   }
   
 
   .title {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-size: 96px;
-    max-width: 600px;
+    font-size: 150px;
+    max-width: 700px;
   }
 
   .min_desc {
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Pixelify Sans", sans-serif;
     display: inline-block ; /* Esto permite editar el fondo de backround*/
     padding: 2px 15px;
@@ -64,9 +71,9 @@ video {
 
   .desc {
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 10px;
-    max-width: 570px;
+    max-width: 700px;
 
     text-align: justify;        /* Esto alinea ambos márgenes */
     text-justify: inter-word;   /* Esto es un modo de justificación más uniforme */
@@ -76,7 +83,7 @@ video {
   }
   
   img.io {
-    width: 612px; /* o 256px, 384px, depende de cuánto quieras escalar */
+    width: 630px; 
     height: auto;
   
     image-rendering: pixelated;
@@ -88,13 +95,13 @@ video {
   
     /* Evita que el navegador escale mal */
     image-rendering: pixelated;
-    margin-top: -90px;
+    margin-left: 5%;
   }
 
   img.pared { 
     display: block;
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin: 0;
     margin-top: -50px;
     image-rendering: pixelated;
@@ -107,4 +114,76 @@ video {
     /* Evita que el navegador escale mal */
     image-rendering: pixelated;
   }
+
+  img.pared.pared2 {
+    height: 200px !important;
+    margin-top: 0;
+  }
+
+  img.nube {
+    position: absolute;
+    transform: translate(0, 0); /* ajustable si se necesita fino */
+    height: auto;
+    opacity: 0.3;
+    pointer-events: none;
+    margin-top: -130px;
+    margin-left: 100px;
+    z-index: 3;
+
+
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
   
+    /* Evita que el navegador escale mal */
+    image-rendering: pixelated;
+  }
+
+  img.nube.nube1 {
+    width: 450px; 
+    margin-top: -130px;
+    margin-left: 100px;
+  }
+
+
+
+  
+
+
+  /* ----------------------------- CONTEINER 3 ----------------------------- */
+
+  .conteiner3 {
+    background-color: #e2dcce;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 300px;
+    padding-bottom: 300px; 
+  }
+  
+  .title2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 96px;
+    max-width: 600px;
+  }
+
+  .desc2 {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    max-width: 1000px;
+
+    text-align: justify;        /* Esto alinea ambos márgenes */
+    text-justify: inter-word;   /* Esto es un modo de justificación más uniforme */
+    hyphens: auto;              /* Esto permite guionado automático en navegadores compatibles */
+  
+    line-height: 1.5;           /* Ayuda a la lectura */
+  }
+
+
+   
