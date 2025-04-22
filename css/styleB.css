@@ -7,9 +7,9 @@ html, body {
 
 .fondo-imagenes img {
   flex: 1; 
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  margin-top: -4px;
+  margin-top: -5px;
   padding: 0;
   object-fit: cover; /* Hace que las imágenes llenen bien su espacio */
 }
@@ -151,7 +151,7 @@ body::-webkit-scrollbar {
   --btn-animation-duration: 1.2s;
   --btn-shadow-color: rgba(0, 0, 0, 0.137);
   --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-  --hover-btn-color: #4de762;
+  --hover-btn-color: #22ee3e;
   --default-btn-color: #fff;
   --font-size: 35px;
   /* 👆 this field should not be empty */

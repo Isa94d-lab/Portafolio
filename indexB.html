@@ -1,159 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortafolioB</title>
-    <link rel="stylesheet" href="css/styleB.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PortafolioB</title>
+  <link rel="stylesheet" href="css/styleB.css"/>
 
-    <!-- Iconos Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
 
-    <!-- BARRA DE OPCIONES -->
-    <nav>
-        <h2 class="logo"></h2>
-        <div class="bars">
-          <i class="fa fa-bars"></i>
-        </div>
-        <ul class="nav-links">
-          <li class="nav-link"><a href="#">Home</a></li>
-          <li class="nav-link"><a href="#">About</a></li>
-          <li class="nav-link"><a href="#">Portafolio</a></li>
-          <li class="nav-link"><a href="#">Contact</a></li>
-        </ul>
-        
-    </nav>
-
-    <!-- Imágenes de fondo -->
-    <div class="fondo-imagenes">
-        <img src="img/ImgB/Imagen1.png" alt="">
-        <img src="img/ImgB/Imagen2.png" alt="">
-        <img src="img/ImgB/Imagen3.png" alt="">
-        <img src="img/ImgB/Imagen4.png" alt="">
-        <img src="img/ImgB/Imagen5.png" alt="">
-        <img src="img/ImgB/Imagen6.png" alt="">
+  <!-- BARRA DE OPCIONES -->
+  <nav>
+    <h2 class="logo"></h2>
+    <div class="bars">
+      <i class="fa fa-bars"></i>
     </div>
+    <ul class="nav-links">
+      <li class="nav-link"><a href="#">Home</a></li>
+      <li class="nav-link"><a href="#">About</a></li>
+      <li class="nav-link"><a href="#">Portafolio</a></li>
+      <li class="nav-link"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Script para toggle del menú -->
-    <script>
-        const bars = document.querySelector(".bars");
-        const nav = document.querySelector("nav");
+  <!-- Imágenes de fondo -->
+  <div class="fondo-imagenes">
+    <img src="img/imgB/Imagen1.png" alt="">
+    <img src="img/imgB/Imagen2.png" alt="">
+    <img src="img/imgB/Imagen3.png" alt="">
+    <img src="img/imgB/Imagen4.png" alt="">
+    <img src="img/imgB/Imagen5.png" alt="">
+    <img src="img/imgB/Imagen6.png" alt="">
+  </div>
 
-        bars.onclick = () => {
-            nav.classList.toggle("active");
-        };
-    </script>
-
-
-    <script>
-
-
-      // Crear audio para reproducir en cada click
-    const sonido = new Audio("sounds/windows.mp3");
-
-    // Contador de clicks y límite
-    let clickCount = 0;
-    const maxClicks = 8;
-
-    // Manejar click en cualquier parte del body
-    document.body.addEventListener("click", (e) => {
-      // Incrementar contador
-      clickCount++;
-
-      // Reproducir sonido (reinicia si ya estaba sonando)
-      sonido.currentTime = 0;
-      sonido.play();
-
-      // Crear imagen en el punto del click
-      const img = document.createElement("img");
-      img.src = "img/imgB/TryError.png"; // Ruta a la imagen
-      img.style.position = "absolute";
-      img.style.width = "180px";
-      img.style.left = `${e.clientX - 50}px`; // Centrada en eje X
-      img.style.top = `${e.clientY - 50}px`;  // Centrada en eje Y
-      img.style.pointerEvents = "none"; // No interfiere con otros clicks
-      img.style.zIndex = "9"; // Por encima de todo
-      img.style.transition = "transform 0.5s, opacity 0.5s";
-
-      // Agregar imagen al DOM
-      document.body.appendChild(img);
-
-      // Eliminar imagen después de 10 segundos
-      setTimeout(() => {
-        img.remove();
-      }, 20000);
-
-      // Mostrar popup si llega al número de clicks
-      if (clickCount === maxClicks) {
-        mostrarPopup();      // Llama la función del popup
-        clickCount = 0;      // Reinicia el contador
-      }
-    });
-
-    // Función para crear y mostrar el popup
-    function mostrarPopup() {
-      // Crear fondo oscuro que bloquea el contenido
-      const overlay = document.createElement("div");
-      overlay.id = "popup-overlay";
-      overlay.style.position = "fixed";
-      overlay.style.top = 0;
-      overlay.style.left = 0;
-      overlay.style.width = "100vw";
-      overlay.style.height = "100vh";
-      overlay.style.backgroundColor = "rgba(0, 0, 0, 0.9)"; // Fondo oscuro
-      overlay.style.zIndex = "9";
-      overlay.style.display = "flex";
-      overlay.style.justifyContent = "center";
-      overlay.style.alignItems = "center";
-
-      // Evita que se propague el click al fondo (opcional)
-      overlay.addEventListener("click", (e) => e.stopPropagation());
-
-      // Crear contenedor del popup
-      const popup = document.createElement("div");
-      popup.id = "popup";
-      popup.style.background = "transparent";
-      popup.style.padding = "1rem";
-      popup.style.borderRadius = "10px";
-      popup.style.boxShadow = "0 0 20px rgba(0,0,0,0.5)";
-      popup.style.zIndex = "10"; // Encima del overlay
-      popup.style.textAlign = "center";
-
-
-      // Crear botón de cierre
-      const boton = document.createElement("button");
-      boton.className = "ui-btn";
-      boton.innerHTML = '<span data-text="RESTART">RESTART</span>';
-
-      // Al hacer clic, activa la animación glitch y redirige después de 500ms
-      boton.addEventListener("click", () => {
-      const span = boton.querySelector("span");
-      
-      // Cambiar el color a blanco solo cuando inicie el glitch
-      span.style.color = "#fff"; // Cambia el color a blanco
-      
-      // Activamos el glitch añadiendo la clase
-      span.classList.add("glitch");
-
-      // Redirigir a la página después del efecto
-      setTimeout(() => {
-        window.location.href = "index.html";
-      }, 300); // Tiempo del glitch (0.3s)
-    });
-
-
-
-      // Agregar botón al popup y popup al overlay
-      popup.appendChild(boton);
-      overlay.appendChild(popup);
-
-      // Agregar el overlay (con popup) al body
-      document.body.appendChild(overlay);
-  }
-
-  </script>
-
+  <!-- Importar JavaScript externo -->
+  <script src="js/appB.js"></script>
 </body>
 </html>
