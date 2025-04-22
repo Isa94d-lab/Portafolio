@@ -47,7 +47,7 @@ video {
   }
 
   .mini-conteiner2-2 {
-    margin-left: 22%; 
+    margin-left: 20%; 
   }
   
 
@@ -116,20 +116,16 @@ video {
   }
 
   img.pared.pared2 {
-    height: 200px !important;
+    height: 300px !important;
     margin-top: 0;
   }
 
   img.nube {
     position: absolute;
     transform: translate(0, 0); /* ajustable si se necesita fino */
-    height: auto;
     opacity: 0.3;
     pointer-events: none;
-    margin-top: -130px;
-    margin-left: 100px;
-    z-index: 3;
-
+    z-index: 1;
 
     image-rendering: pixelated;
     image-rendering: crisp-edges;
@@ -145,9 +141,38 @@ video {
   img.nube.nube1 {
     width: 450px; 
     margin-top: -130px;
-    margin-left: 100px;
+    margin-left: 70px;
   }
 
+  img.nube.nube2 {
+    width: 320px; 
+    margin-top: 460px;
+    margin-left: 940px;
+  }
+
+  img.nube.nube3 {
+    width: 350px;
+    margin-top: 580px;
+    margin-left: 150px;
+  }
+
+  img.nube.nube4 {
+    width: 450px;
+    margin-top: 0;
+    margin-left: 1000px;
+  }
+
+  img.nube.nube5 {
+    width: 280px;
+    margin-top: 300px;
+    margin-left: -100px;
+  }
+
+  img.nube.nube6 {
+    width: 280px;
+    margin-top: 400px;
+    margin-left: 1700px;
+  }
 
 
   
@@ -157,12 +182,16 @@ video {
 
   .conteiner3 {
     background-color: #e2dcce;
+    padding-top: 350px;
+    padding-bottom: 350px; 
+    position: relative;
+  }
+  
+  .mini-conteiner3 {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-top: 300px;
-    padding-bottom: 300px; 
+    flex-direction: row;
+    padding-left: 200px;
+    text-align: left;
   }
   
   .title2 {
@@ -176,7 +205,7 @@ video {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     margin-top: 10px;
-    max-width: 1000px;
+    max-width: 950px;
 
     text-align: justify;        /* Esto alinea ambos márgenes */
     text-justify: inter-word;   /* Esto es un modo de justificación más uniforme */
@@ -184,6 +213,71 @@ video {
   
     line-height: 1.5;           /* Ayuda a la lectura */
   }
+
+  .animationPc {
+    width: 550px;
+    height: auto;
+    margin-left: 50px;
+
+    
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+  
+    /* Evita que el navegador escale mal */
+    image-rendering: pixelated;
+  }
+
+
+  img.nube.nube7 {
+    width: 500px;
+    height: auto;
+    margin-top: 250px;
+    margin-left: 150px;
+  }
+
+  img.nube.nube8 {
+    width: 480px;
+    height: auto;
+    margin-top: -210px;
+    margin-left: 750px;
+  }
+
+  img.nube.nube9 {
+    width: 350px;
+    height: auto;
+    margin-top: 450px;
+    margin-left: 970px;
+  }
+
+  img.nube.nube9 {
+    width: 350px;
+    height: auto;
+    margin-top: 450px;
+    margin-left: 970px;
+  }
+
+  img.nube.nube10 {
+    width: 330px;
+    height: auto;
+    margin-left: -120px;
+
+  }
+
+  img.nube.nube11 {
+    width: 400px;
+    height: auto;
+    margin-left: 1700px;
+
+  }
+
+
+
+
+
 
 
    
