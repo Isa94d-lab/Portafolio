@@ -8,24 +8,52 @@
 </head>
 <body>
     <div class="conteiner1">
-    <video id="presentacion" width="100%" muted loop playsinline>
-        <source src="/video/wtfbro.mp4" type="video/mp4">
-    </video>
-      
-    <script>
-        // Espera 3 segundos (3000 milisegundos)
-        setTimeout(() => {
-          const video = document.getElementById("presentacion");
-          video.play();
-        }, 3000);
-    </script>
+        <video id="presentacion" width="100%" muted loop playsinline>
+            <source src="/video/wtfbro.mp4" type="video/mp4">
+        </video>
+        
+        <div class="downtown">
+            <a href="#conteiner2">
+              <button id="downtown-button">
+                <div class="arrow-down"></div>
+              </button>
+            </a>
+        </div>
+          
+
+        <script>
+            // Espera 3 segundos (3000 milisegundos)
+            setTimeout(() => {
+            const video = document.getElementById("presentacion");
+            video.play();
+            }, 3000);
+
+            // Asegurarnos de que el DOM se ha cargado completamente
+            window.addEventListener('DOMContentLoaded', () => {
+                const button = document.getElementById('downtown-button');
+                const target = document.getElementById('conteiner2');
+                
+                // Esperar 1 segundo y luego mostrar el botón
+                setTimeout(() => {
+                    button.classList.add('show');
+                }, 10000); 
+
+                // Scroll suave al hacer clic en el botón
+                button.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+                    target.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave
+                });
+            });
+        </script>
+        
+    
 
     </div>
 
     <div class="intermedio"><img src="/img/imgA/pared.gif" class="pared" alt="Pixel art de Steff"></div>
 
      
-    <div class="conteiner2">
+    <div class="conteiner2" id="conteiner2">
         <img src="/img/imgA/sky.gif" class="nube nube1">
         <img src="/img/imgA/sky.gif" class="nube nube2">
         <img src="/img/imgA/sky.gif" class="nube nube3">
