@@ -16,17 +16,18 @@ html {
 
 .downtown {
   position: absolute;
-  margin-top: 870px;
+  margin-top: 1050px;
+
 }
 
 .downtown button {
   display: flex;            /* Añadido para centrar contenido */
   align-items: center;      /* Centramos verticalmente */
   justify-content: center;  /* Centramos horizontalmente */
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
+  width: 70px;
+  height: 70px;
+  bottom: 50px;
+  right: 50px;
   background-color: #090909;
   color: #FFF;
   border-radius: 50px;
@@ -104,8 +105,8 @@ video {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-top: 170px;
-    padding-bottom: 100px;
+    padding-top: 250px;
+    padding-bottom: 240px;
     background-color: #e2dcce;
   }
 
@@ -117,7 +118,7 @@ video {
   }
 
   .mini-conteiner2-2 {
-    margin-left: 20%; 
+    margin-left: 23%; 
   }
   
 
@@ -153,9 +154,9 @@ video {
   }
   
   img.io {
-    width: 630px; 
+    width: 700px; 
     height: auto;
-  
+    margin-top: -20px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
