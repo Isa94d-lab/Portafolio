@@ -82,7 +82,7 @@ html {
 
 
 html, body {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     overflow: auto; /* Permitimos el scroll */
     scrollbar-width: none; /* Firefox */
@@ -197,78 +197,107 @@ video {
     margin-top: 0;
   }
 
-  img.nube {
-    position: absolute;
-    transform: translateX(0);
-    opacity: 0.3;
-    pointer-events: none;
-    z-index: 1;
 
-    image-rendering: pixelated;
-    animation-name: moverNubes;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+
+  img.nube {
+      position: absolute;
+      transform: translateX(0);
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 1;
+
+      image-rendering: pixelated;
+      animation-name: moverNubes;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
   }
 
-  /* Cada nube con velocidad distinta */
-  img.nube.nube1 {
-      width: 450px; 
-      margin-top: -130px;
-      margin-left: 70px;
+  /* Primera vuelta lenta para todas */
+  .lento {
+      animation-duration: 200s;
+  }
+
+  /* Después, cada nube diferente */
+  .nube1.rapido {
       animation-duration: 60s;
   }
 
+  .nube2.rapido {
+      animation-duration: 80s;
+  }
+
+  .nube3.rapido {
+      animation-duration: 70s;
+  }
+
+  .nube4.rapido {
+      animation-duration: 90s;
+  }
+
+  .nube5.rapido {
+      animation-duration: 50s;
+  }
+
+  .nube6.rapido {
+      animation-duration: 90s;
+  }
+
+  /* Márgenes fijos como tú pediste */
+  img.nube.nube1 {
+      width: 450px;
+      margin-top: -130px;
+      margin-left: 70px;
+  }
+
   img.nube.nube2 {
-      width: 320px; 
+      width: 320px;
       margin-top: 460px;
       margin-left: 940px;
-      animation-duration: 75s;
   }
 
   img.nube.nube3 {
       width: 350px;
       margin-top: 580px;
       margin-left: 150px;
-      animation-duration: 50s;
   }
 
   img.nube.nube4 {
       width: 450px;
       margin-top: 0;
       margin-left: 1000px;
-      animation-duration: 90s;
   }
 
   img.nube.nube5 {
       width: 280px;
       margin-top: 300px;
       margin-left: -100px;
-      animation-duration: 40s;
   }
 
   img.nube.nube6 {
       width: 280px;
       margin-top: 400px;
       margin-left: 1700px;
-      animation-duration: 85s;
   }
 
-
-  /* Animación para mover las nubes hacia la derecha */
+  /* Animación de movimiento */
   @keyframes moverNubes {
       0% {
           transform: translateX(0);
           opacity: 0.3;
       }
-      40% {
+      45% {
           transform: translateX(150vw);
           opacity: 0.3;
       }
-      41% {
+      50% {
+          transform: translateX(150vw);
+          opacity: 0;
+      }
+      55% {
           transform: translateX(-200vw);
           opacity: 0;
       }
-      42% {
+      60% {
           opacity: 0.3;
       }
       100% {
@@ -276,6 +305,8 @@ video {
           opacity: 0.3;
       }
   }
+
+
 
     
 
