@@ -194,17 +194,6 @@ video {
     image-rendering: pixelated;
   }
 
-  img.pared.pared2 {
-    height: 300px !important;
-    margin-top: 0;
-  }
-
-  img.pared.pared3 {
-    height: 600px !important;
-    background-color: #e2dcce;
-    margin-top: 0;
-  }
-
 
 
   img.nube {
@@ -217,6 +206,7 @@ video {
     animation-name: moverNubes;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-fill-mode: forwards; 
   }
 
   /* Cada nube tiene su duración propia SIEMPRE */
@@ -262,29 +252,48 @@ video {
       animation-duration: 100s;
   }
 
+  img.nube.nube7 {
+      width: 450px;
+      margin-top: 1000px;
+      margin-left: 50px;
+      animation-duration: 100s;
+  }
+
+  img.nube.nube8 {
+      width: 500px;
+      margin-top: 1300px;
+      margin-left: 600px;
+      animation-duration: 90s;
+      opacity: 0;
+  }
+
 
   /* Animación de movimiento */
   @keyframes moverNubes {
-      0% {
-          transform: translateX(-20vw);
-          opacity: 0.3;
-      }
-      90% {
-          transform: translateX(120vw);
-          opacity: 0.3;
-      }
-      91% {
-          transform: translateX(-20vw);
-          opacity: 0;
-      }
-      92% {
-          opacity: 0.3;
-      }
-      100% {
-          transform: translateX(0vw);
-          opacity: 0.3;
-      }
+    0% {
+      transform: translateX(-30vw);
+      opacity: 0;
+    }
+
+    5% {
+      opacity: 0.3;
+    }
+
+    85% {
+      transform: translateX(120vw);
+      opacity: 0.3;
+    }
+
+    95% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(-30vw); /* Regresa al inicio sin verse */
+      opacity: 0;
+    }
   }
+
 
 
 
@@ -296,45 +305,16 @@ video {
   /* ----------------------------- CONTEINER 3 ----------------------------- */
 
   .conteiner3 {
-    background-color: #e2dcce;
-    padding-top: 350px;
-    padding-bottom: 350px; 
+    background-color: #cac3ba;
     position: relative;
   }
-  
-  .mini-conteiner3 {
-    display: flex;
-    flex-direction: row;
-    padding-left: 200px;
-    text-align: left;
-  }
-  
-  .title2 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 96px;
-    max-width: 600px;
-  }
 
-  .desc2 {
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    margin-top: 10px;
-    max-width: 950px;
-
-    text-align: justify;        /* Esto alinea ambos márgenes */
-    text-justify: inter-word;   /* Esto es un modo de justificación más uniforme */
-    hyphens: auto;              /* Esto permite guionado automático en navegadores compatibles */
-  
-    line-height: 1.5;           /* Ayuda a la lectura */
-  }
-
-  .animationPc {
-    width: 550px;
-    height: auto;
-    margin-left: 50px;
-
-    
+  .fondo {
+    display: block;
+    width: 100%;
+    height: 950px;
+    margin: 0;
+    margin-top: -50px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
@@ -346,49 +326,38 @@ video {
     image-rendering: pixelated;
   }
 
+  .pared2 {
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(
+    to bottom,
+    #e2dcce 0px,
+    #e2dcce 30px,
+    #5282b5 90%,
+    #5282b5 95px,
+    #5282b5 98%
+    );
+  }
+  .mini-conteiner3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+  }
 
-  img.nube.nube7 {
+  .pilar {
+    margin-top: -650px;
+
     width: 500px;
-    height: auto;
-    margin-top: 250px;
-    margin-left: 150px;
+    height: 700px;
+    image-rendering: pixelated;
   }
 
-  img.nube.nube8 {
-    width: 480px;
-    height: auto;
-    margin-top: -210px;
-    margin-left: 750px;
-  }
 
-  img.nube.nube9 {
-    width: 350px;
-    height: auto;
-    margin-top: 450px;
-    margin-left: 970px;
-  }
 
-  img.nube.nube9 {
-    width: 350px;
-    height: auto;
-    margin-top: 450px;
-    margin-left: 970px;
-  }
-
-  img.nube.nube10 {
-    width: 330px;
-    height: auto;
-    margin-left: -120px;
-
-  }
-
-  img.nube.nube11 {
-    width: 400px;
-    height: auto;
-    margin-left: 1700px;
-
-  }
-
+    
+    
 
 
 
