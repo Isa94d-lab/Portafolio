@@ -358,7 +358,7 @@ video {
 
 
 
-  /* ----------------------------- CONTEINER 3.5 ----------------------------- */
+  /* ----------------------------- CONTEINER 3-2 ----------------------------- */
 
   .mini-conteiner3-2 {
     display: flex;             
@@ -384,8 +384,68 @@ video {
   }
 
 
-    
-    
+  /* ----------------------------- CONTEINER 3-3 ----------------------------- */
+
+  .mini-conteiner3-3 {
+    position: relative;
+    z-index: 1; 
+  }
+
+  /* Fondo oscuro detrás del popup */
+  .fondoPopUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: none;             /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    animation: fadeIn 0.3s ease;
+  }
+
+  /* El cuadro blanco */
+  .popup {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 1000px;
+    height: 500px;
+    max-width: 90%;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    animation: zoomIn 0.3s ease;
+    position: relative;
+  }
+
+  /* Botón de cerrar (X) */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  /* Animaciones */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+
+
+      
+      
 
 
 
