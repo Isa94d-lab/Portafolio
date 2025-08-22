@@ -344,6 +344,7 @@ video {
     justify-content: center;
     align-items: center;
     margin-top: -100px;
+    image-rendering: pixelated;
   }
 
   .pilar {
@@ -354,6 +355,33 @@ video {
     image-rendering: pixelated;
   }
 
+
+
+
+  /* ----------------------------- CONTEINER 3.5 ----------------------------- */
+
+  .mini-conteiner3-2 {
+    display: flex;             
+    justify-content: center;   
+    align-items: center;      
+    flex-wrap: wrap;           
+    text-align: center;         
+  }
+
+  .Pilares {
+    margin-top: -650px;
+    width: 500px;
+    height: 700px;
+
+  }
+
+  .Icon {
+    position: static;
+    width: 500px;
+    height: 700px;
+    margin-top: -705px;
+    
+  }
 
 
     
