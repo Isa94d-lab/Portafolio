@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.Icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.Icons img {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.PopUpConteiner {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Title {
+    font-size: 50px;
+    font-family: "Pixelify Sans"
+}

@@ -1,73 +1,70 @@
-import { trabajos } from "../data/info.js";
+document.addEventListener("DOMContentLoaded", () => {
+    const popupOverlay = document.getElementById("popupOverlay");
+    const popupContent = document.getElementById("popupContent");
+    const popupClose = document.getElementById("popupClose");
 
-export function generarTrabajos(trabajos) {
-    const contenedor = document.getElementById('movieCard'); // Contenedor de las tarjetas
-
-    // Función para limpiar el contenedor antes de agregar nuevas tarjetas
-    const limpiarContenedor = () => {
-        contenedor.innerHTML = ''; // Limpia el contenedor de las tarjetas
+    // Bloques de HTML para cada icono
+    const info = {
+        js: `
+          <div class="PopUpConteiner">
+            <div class="Title">JavaScript</div>
+            <div class="Icons">
+              <img src="img/imgC/F1-Icon.jpg" alt="proyecto" style="height:120px; width:auto;">
+              <img src="img/imgC/Netflix-Icon.jpg" alt="proyecto" style="height:120px; width:auto;">
+              <img src="img/imgC/Portafolio-Icon.jpg" alt="proyecto" style="height:120px; width:auto;">
+            </div>
+            <link rel="stylesheet" href="css/styleC.css">
+          </div>
+        `,
+        c: `
+          <div class="PopUpConteiner">
+            <div class="Title">JavaScript</div>
+            <div class="Icons">
+              <img src="img/imgC/F1-Icon.jpg" alt="proyecto" style="height:120px; width:auto;">
+              <img src="img/imgC/Netflix-Icon.jpg" alt="proyecto" style="height:120px; width:auto;">
+              <img src="img/imgC/Portafolio-Icon.jpg" alt="proyecto" style="height:120px; width:auto;">
+            </div>
+            <link rel="stylesheet" href="css/styleC.css">
+          </div>
+        `,
+        python: `
+          <div class="PopUpConteiner">
+            <div class="Title">JavaScript</div>
+            <div class="Icons">
+              <img src="img/imgC/F1-Icon.jpg" alt="proyecto" style="height:120px; width:auto;">
+              <img src="img/imgC/Netflix-Icon.jpg" alt="proyecto" style="height:120px; width:auto;">
+              <img src="img/imgC/Portafolio-Icon.jpg" alt="proyecto" style="height:120px; width:auto;">
+            </div>
+            <link rel="stylesheet" href="css/styleC.css">
+          </div>
+        `
     };
 
-    // Función para generar las tarjetas a partir de las películas
-    const mostrarTrabajos = (TrabajosParaMostrar) => {
-        // Limpiar el contenedor antes de agregar las tarjetas filtradas
-        limpiarContenedor();
+    // Función para abrir popup con HTML
+    function openPopup(html) {
+        popupContent.innerHTML = html;
+        popupOverlay.style.display = "flex";
+    }
 
-        TrabajosParaMostrar.forEach(([, trabajo]) => {
-            const tarjeta = document.createElement('div');
-            tarjeta.classList.add('col'); // Clase para un grid responsive
+    // Cerrar popup
+    popupClose.addEventListener("click", () => {
+        popupOverlay.style.display = "none";
+    });
 
-            // Crear la estructura HTML de la tarjeta
-            tarjeta.innerHTML = `
-                <!-- Popup Overlay -->
-                <div class="popupOverlay">
-                    <div class="title-work">${trabajo.lenguaje}</div>
-                                <table>
-                                    <tr>
-                                        <img class="img-work" src="${trabajo.img}">
-                                        <td><div class="name-work">${trabajo.nombre}</div></td>
-                                    </tr>
+    popupOverlay.addEventListener("click", (e) => {
+        if (e.target === popupOverlay) popupOverlay.style.display = "none";
+    });
 
-                                    <tr>
-                                        <img class="img-work" src="${trabajo.img2}">
-                                        <td><div class="name-work">${trabajo.nombre3}</div></td>
-                                    </tr>
+    // Asignar eventos a íconos
+    document.querySelector(".Icon[src*='SoloJS.gif']").addEventListener("click", () => {
+        openPopup(info.js);
+    });
 
-                                    <tr>
-                                        <img class="img-work" src="${trabajo.img3}">
-                                        <td><div class="name-work">${trabajo.nombre3}</div></td>
-                                    </tr>
-                                </table>
-                    </div
-                </div>
-            `;
+    document.querySelector(".Icon[src*='SoloC.gif']").addEventListener("click", () => {
+        openPopup(info.c);
+    });
 
-            // Agregar la tarjeta al contenedor
-            contenedor.appendChild(tarjeta);
-
-            // Funcionalidad del popup
-            const openPopupBtn = tarjeta.querySelector('.openPopupBtn');
-            const closePopupBtn = tarjeta.querySelector('.closeBtn');
-            const popupOverlay = tarjeta.querySelector('.popupOverlay');
-
-            openPopupBtn.addEventListener('click', () => {
-                popupOverlay.style.display = 'flex'; // Muestra el overlay
-            });
-
-            closePopupBtn.addEventListener('click', () => {
-                popupOverlay.style.display = 'none'; // Oculta el overlay
-            });
-
-            popupOverlay.addEventListener('click', (e) => {
-                if (e.target === popupOverlay) {
-                    popupOverlay.style.display = 'none';
-                }
-            });
-        });
-    };
-
-    // Mostrar todas las proyectos inicialmente
-    mostrarProyectos(proyecto);
-
-
-}
+    document.querySelector(".Icon[src*='SoloPython.gif']").addEventListener("click", () => {
+        openPopup(info.python);
+    });
+});

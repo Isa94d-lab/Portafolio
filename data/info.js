@@ -15,7 +15,6 @@ export const trabajos = [
             img3: 'https://i.pinimg.com/736x/f7/09/b2/f709b2314b67a6485ecc3cc956f1308a.jpg',
             nombre3: 'Cine Web',
 
-
         }
     ]
 ];
