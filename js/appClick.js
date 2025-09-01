@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const popupContent = document.getElementById("popupContent");
     const popupClose = document.getElementById("popupClose");
 
-    // Bloques de HTML para cada icono (fíjate los data-proyecto en cada img)
     const info = {
         js: `
           <div class="PopUpConteiner">
@@ -40,22 +39,16 @@ document.addEventListener("DOMContentLoaded", () => {
         `
     };
 
-    // Función para abrir popup con HTML
     function openPopup(html) {
         popupContent.innerHTML = html;
         popupOverlay.style.display = "flex";
     }
 
-    // Cerrar popup
+    // Esto permitira unicamente cerrar el popUp con la X
     popupClose.addEventListener("click", () => {
         popupOverlay.style.display = "none";
     });
 
-    popupOverlay.addEventListener("click", (e) => {
-        if (e.target === popupOverlay) popupOverlay.style.display = "none";
-    });
-
-    // Asignar eventos a íconos
     document.querySelector(".Icon[src*='SoloJS.gif']").addEventListener("click", () => {
         openPopup(info.js);
     });

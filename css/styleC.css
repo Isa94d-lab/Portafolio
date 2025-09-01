@@ -25,7 +25,7 @@
     font-family: "Pixelify Sans"
 }
 
-/* Popup secundario (único) */
+/* Popup secundario */
 .popupOverlay2 {
   display: none;
   position: fixed;
@@ -148,4 +148,17 @@
 .closeBtn2:hover::before,
 .closeBtn2:hover::after {
   background-color: darkred;
+}
+
+/* ----------------------------------------- XxX ----------------------------------------- */
+
+.imgProyect :hover{
+  cursor: pointer;
+}
+
+.trying {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000
+
 }

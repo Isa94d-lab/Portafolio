@@ -380,6 +380,7 @@ video {
     width: 500px;
     height: 700px;
     margin-top: -705px;
+    cursor: pointer;
     
   }
 

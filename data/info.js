@@ -18,7 +18,21 @@ export const proyects = [
 
             img: 'img/imgC/F1-show.png',
 
-            collaborators: ['Isa94d-Lab', ' Santiagomtello', ' Amdresw'] 
+            rpg: 'https://github.com/Isa94d-lab/F1-RACING.git',
+
+            /* Se creo un array que permitira redirigir al perfil de los colaboradores */
+
+            collaborators2: [
+                'https://github.com/Isa94d-lab',
+                'https://github.com/santiagomtello',
+                'https://github.com/amdresw'
+            ],
+
+            collaborators: [
+            'Isa94d-Lab',
+            'Santiagomtello',
+            'Amdresw'
+            ],
 
         },
     ], 
@@ -38,6 +52,12 @@ export const proyects = [
 
             img: 'img/imgC/CineWeb-show.png',
 
+            rpg: 'https://github.com/Isa94d-lab/CineWeb.git',
+
+            /* Se creo un array que permitira redirigir al perfil de los colaboradores */
+
+            collaborators2: ['https://github.com/Isa94d-lab'],
+
             collaborators: ['Isa94d-Lab'] 
 
         }
@@ -48,17 +68,24 @@ export const proyects = [
             ID: 3,
             name: 'Portafolio',
             lenguage: 'JavaScript',
-            description: `Portafolio es un proyecto personal que refleja la personalidad de su desarrolladora, mostrando sus intereses, conocimientos y habilidades, con disposición a seguir aprendiendo y creciendo.
-
+            description: `Portafolio es un proyecto personal que refleja la personalidad de su desarrolladora, mostrando intereses, conocimientos y habilidades, siempre con disposición de seguir aprendiendo y creciendo.
             Características principales:
 
-            - Pixel arts hechos a mano, que aportan un estilo único
-            - Animaciones dinámicas, que enriquecen la experiencia visual
-            - Pop Ups interactivos, para presentar los proyectos desarrollados
+            - Pixel arts hechos a mano, con un estilo único 🎨
 
-            Este proyecto combina técnica y creatividad en una interfaz intuitiva, llamativa y exploratoria.`,
+            - Animaciones dinámicas que enriquecen la experiencia ✨ 
+
+            - Pop Ups interactivos para mostrar proyectos 📂
+
+            Un proyecto que une técnica y creatividad en una interfaz intuitiva y llamativa.`,
 
             img: 'img/imgC/Portafolio-show.png',
+
+            rpg: 'https://github.com/Isa94d-lab/Portafolio.git',
+
+            /* Se creo un array que permitira redirigir al perfil de los colaboradores */
+
+            collaborators2: 'https://github.com/Isa94d-lab',
 
             collaborators: ['Isa94d-Lab'] 
 
