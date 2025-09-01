@@ -27,10 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
               <img class="imgProyect" src="${info.img}">
             </td>
             <td>
-              <p class="titleProyect">Titulo: ${info.name}</p>
-              <p class="lenguageProyect">Lenguaje: ${info.lenguage}</p>
-              <p class="descriptionProyect">Descripcion: ${info.description}</p>
-              <p class="collaboratorsProyect"> Colaboradores: ${info.collaborators}</p>
+              <div class="popUpConteiner">
+                <div class="title">
+                  <p class="titleProyect"> ${info.name}</p>
+                  <p class="lenguageProyect">${info.lenguage}</p>
+                </div>
+                <p class="descriptionProyect">${info.description}</p>
+                <p class="collaboratorsProyect"> Colaboradores: ${info.collaborators}</p>
+              </div>
             </td>
           </tr>
         </table>

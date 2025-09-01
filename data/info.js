@@ -16,9 +16,9 @@ export const proyects = [
 
             De esta manera, los usuarios dependiendo del usuario ingresado podran visualizar o administrar y mantener organizada la información de cada entidad de forma sencilla, intuitiva y eficiente.`,
 
-            img: 'https://i.imgur.com/nZZODGN.png',
+            img: 'img/imgC/F1-show.png',
 
-            collaborators: ['Isa94d-Lab', 'Santiagomtello', 'Amdresw'] 
+            collaborators: ['Isa94d-Lab', ' Santiagomtello', ' Amdresw'] 
 
         },
     ], 
@@ -28,24 +28,15 @@ export const proyects = [
             ID: 2,
             name: 'CineWeb',
             lenguage: 'JavaScript',
-            description: `El proyecto "CineWeb" tiene como objetivo ofrecer una interfaz intuitiva y dinamica para la visualización de peliculas.
-            Entre sus principales características se incluyen:
+            description: `El proyecto "CineWeb" busca simular una página dedicada a la visualización de películas, ofreciendo funcionalidades interactivas para la gestión y exploración de:
 
-            Barra de busqueda para encontrar películas fácilmente.
+            - Búsquedas de películas 🔍
+            - Selección interactiva 🎬
+            - Información detallada en popup 📑
 
-            Exploración interactiva, donde los usuarios pueden seleccionar su película favorita mediante un botón "See More".
+            De esta manera, los usuarios podrán visualizar, explorar y acceder a la información organizada de cada película de forma sencilla, atractiva e intuitiva.`,
 
-            Popup con información detallada de la pelicuila seleccionada, que muestra:
-
-            - Titulo
-            - Descripción
-            - Genero
-            - Duración
-            - Elenco
-
-            De esta forma, los usuarios disfrutan de una experiencia sencilla, atractiva y organizada para descubrir películas.`,
-
-            img: 'https://i.imgur.com/hLqWMTh.png',
+            img: 'img/imgC/CineWeb-show.png',
 
             collaborators: ['Isa94d-Lab'] 
 
@@ -57,18 +48,17 @@ export const proyects = [
             ID: 3,
             name: 'Portafolio',
             lenguage: 'JavaScript',
-            description: `"Portafolio" es un proyecto personal que busca transmitir  
-            la personalidad de su desarrolladora, mostrando sus intereses, conocimientos y habilidades iniciales, con la disposición total de seguir aprendiendo y creciendo.
-            
-            Entre sus principales características se encuentran:
-            
-            - Pixel arts hechos a mano, que aportan un estilo único y creativo
+            description: `Portafolio es un proyecto personal que refleja la personalidad de su desarrolladora, mostrando sus intereses, conocimientos y habilidades, con disposición a seguir aprendiendo y creciendo.
+
+            Características principales:
+
+            - Pixel arts hechos a mano, que aportan un estilo único
             - Animaciones dinámicas, que enriquecen la experiencia visual
-            - Pop Ups interactivos, donde se presentan los distintos proyectos desarrollados
+            - Pop Ups interactivos, para presentar los proyectos desarrollados
 
-            Este proyecto refleja no solo las capacidades técnicas básicas, sino también la esencia creativa y la naturaleza de su autora, a través de una interfaz intuitiva, llamativa y con exploración interactiva.`,
+            Este proyecto combina técnica y creatividad en una interfaz intuitiva, llamativa y exploratoria.`,
 
-            img: 'https://i.imgur.com/hLqWMTh.png',
+            img: 'img/imgC/Portafolio-show.png',
 
             collaborators: ['Isa94d-Lab'] 
 

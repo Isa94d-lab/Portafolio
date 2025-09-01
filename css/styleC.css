@@ -33,33 +33,119 @@
   background-color: rgba(0,0,0,0.7);
   justify-content: center;
   align-items: center;
+  text-align: center;
   z-index: 1100; 
 }
 
 .popupBox2 {
-  background: #111;
-  color: white;
+  background: url("../img/imgC/FondoPopUp2.gif") center / cover no-repeat;
+  color: black;
   border-radius: 12px;
   padding: 20px;
-  max-width: 700px;
-  width: 90%;
-  max-height: 80%;
+  width: 1300px;
   overflow-y: auto;
   text-align: left;
+  display: flex;
+  align-items: center;
+  height: 630px;
+  justify-content: center;
 }
+
+
+/* Permite mantener el interlenado */
+.popupBox2 p {
+  white-space: pre-line;
+}
+
+
+.imgProyect {
+  max-width: 100%;   /* Que nunca se pase del ancho del contenedor */
+  height: auto;      /* Mantiene la proporción */
+  display: block;    /* Evita espacios extra */
+  border-radius: 10px; /* opcional, para estética */
+  height: 500px;
+  width: 5000px;
+}
+
+.popUpConteiner {
+  font-family: Roboto Mono;
+}
+
+
+.title{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.titleProyect {
+  font-family: Pixelify Sans;
+  font-size: 50px;
+}
+
+.lenguageProyect {
+  font-family: Pixelify Sans;
+  font-size: 20px;
+  background-color: #f7df1d;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+.descriptionProyect {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  text-align: justify
+}
+
+.collaboratorsProyect {
+  margin-left: 10px;
+}
+
+.popUpProyect {
+  max-width: 1200px;
+}
+
 .closeBtn2 {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 15px;
+  right: 15px;
   width: 30px;
   height: 30px;
   background: transparent;
   border: none;
   cursor: pointer;
-  color: white;
+  padding: 0;
+  margin-top: 700px;
+  margin-right: 350px;
 }
 
-/* Permite mantener el interlenado */
-.popupBox2 p {
-  white-space: pre-line;
+.closeBtn2::before,
+.closeBtn2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 3px;
+  height: 40px;
+  background-color: crimson;
+  border-radius: 2px;
+  transform-origin: center;
+}
+
+.closeBtn2::before {
+  transform: rotate(45deg);
+}
+
+.closeBtn2::after {
+  transform: rotate(-45deg);
+}
+
+.closeBtn2:hover::before,
+.closeBtn2:hover::after {
+  background-color: darkred;
 }
