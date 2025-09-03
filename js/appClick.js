@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="PopUpConteiner">
             <div class="Title">Python</div>
             <div class="Icons">
-              <img src="img/imgC/Python-PiedraPapelTijera.jpg" alt="proyecto" data-proyecto="py-game" style="height:120px; width:auto;">
-              <img src="img/imgC/Python-LigaBetplay.jpg" alt="proyecto" data-proyecto="py-liga" style="height:120px; width:auto;">
-              <img src="img/imgC/Python-Question.jpg" alt="proyecto" data-proyecto="py-question" style="height:120px; width:auto;">
+              <img src="img/imgC/Python-PiedraPapelTijera.jpg" alt="proyecto" data-id="7" style="height:120px; width:auto;">
+              <img src="img/imgC/Python-LigaBetplay.jpg" alt="proyecto" data-id="8" style="height:120px; width:auto;">
+              <img src="img/imgC/Python-Question.jpg" alt="proyecto" data-id="9" style="height:120px; width:auto;">
             </div>
             <link rel="stylesheet" href="css/styleC.css">
           </div>

@@ -178,4 +178,89 @@ export const proyects = [
 
         }
     ],
+
+    [
+        7,
+        {
+            ID: 7,
+            name: 'Piedra papel o tijera',
+            lenguage: 'Python',
+            description: `Piedra, Papel o Tijera es un proyecto en Python que recrea el clásico juego, permitiendo jugar contra una IA o en modo multijugador. El objetivo es ganar 3 rondas consecutivas para llevarse la partida.
+            Características principales:
+
+            - Modos de juego: IA y multijugador 🎮
+            - Meta: conseguir 3 victorias seguidas 🏆
+            - Mecánica especial: escudo al lograr 2 rondas consecutivas 🛡️
+
+            Un juego clásico con un giro innovador para hacerlo más desafiante y divertido. ✨`,
+
+            img: 'img/imgC/PiedraPapelOTijera-show.png',
+
+            rpg: 'https://github.com/Isa94d-lab/Piedra-papel-o-tijera.git',
+
+            /* Se creo un array que permitira redirigir al perfil de los colaboradores */
+
+            collaborators2: ['https://github.com/Isa94d-lab'],
+
+            collaborators: ['Isa94d-lab'] 
+
+        }
+    ],
+
+    [
+        8,
+        {
+            ID: 8,
+            name: 'Liga BetPlay',
+            lenguage: 'Python',
+            description: `Liga BetPlay es un proyecto en Python que gestiona equipos de fútbol, permitiendo crear plantillas de jugadores y llevar un control de partidos y clasificaciones.
+            Características principales:
+
+            - Creación de equipos con jugadores (nombre, número y posición) ⚽
+            - Programación de partidos entre equipos registrados 📅
+            - Registro de resultados y actualización de puntos 📝
+            - Tabla de clasificación con toda la información de los equipos 📊
+
+            Un sistema sencillo pero completo para la gestión de ligas de fútbol. 🏆`,
+
+            img: 'img/imgC/LigaBetPlay-show.png',
+
+            rpg: 'https://github.com/Isa94d-lab/LIga-BetPlay.git',
+
+            /* Se creo un array que permitira redirigir al perfil de los colaboradores */
+
+            collaborators2: ['https://github.com/Isa94d-lab'],
+
+            collaborators: ['Isa94d-lab'] 
+
+        }
+    ],
+
+    [
+        9,
+        {
+            ID: 9,
+            name: 'Work In Progres...',
+            lenguage: 'Python',
+            description: `Lorem Ipsum est un proyecto ficticio en Lorem Ipsum destinado a Lorem Ipsum dolor sit amet, mostrando cómo se vería un contenido real dentro de un diseño o prototipo.
+            Características principales:
+
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit 📜
+            - Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 🎨
+            - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 🔄
+
+            Sollicitudin fames suspendisse bibendum hac rhoncus laoreet nec mattis ultricies interdum per. ✨`,
+
+            img: 'img/imgC/WorkInProgres-show.jpg',
+
+            rpg: 'https://github.com/Isa94d-lab',
+
+            /* Se creo un array que permitira redirigir al perfil de los colaboradores */
+
+            collaborators2: ['https://github.com/Isa94d-lab', '...'],
+
+            collaborators: ['Isa94d-lab', '...'] 
+
+        }
+    ],
 ];
