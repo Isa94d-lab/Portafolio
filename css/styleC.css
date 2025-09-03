@@ -20,6 +20,7 @@
     text-align: center;
 }
 
+
 .Title {
     font-size: 50px;
     font-family: "Pixelify Sans"
@@ -161,4 +162,18 @@
   text-decoration: none;
   color: #000
 
+}
+
+/* ----------------------------------------- XxX ----------------------------------------- */
+
+.lenguageProyect[data-id="4"],
+.lenguageProyect[data-id="5"],
+.lenguageProyect[data-id="6"] {
+  background-color: #6200ff;
+}
+
+.titleProyect[data-id="7"],
+.titleProyect[data-id="8"],
+.titleProyect[data-id="9"] {
+  background-color: #3870a1;
 }

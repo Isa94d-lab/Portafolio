@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="PopUpConteiner">
             <div class="Title">C#</div>
             <div class="Icons">
-              <img src="img/imgC/C-CampusLove.jpg" alt="proyecto" data-proyecto="c-campus" style="height:120px; width:auto;">
-              <img src="img/imgC/C-Maleta.jpg" alt="proyecto" data-proyecto="c-maleta" style="height:120px; width:auto;">
-              <img src="img/imgC/C-SurverySystem.jpg" alt="proyecto" data-proyecto="c-survey" style="height:120px; width:auto;">
+              <img src="img/imgC/C-CampusLove.jpg" alt="proyecto" data-id="4" style="height:120px; width:auto;">
+              <img src="img/imgC/C-Maleta.jpg" alt="proyecto" data-id="5" style="height:120px; width:auto;">
+              <img src="img/imgC/C-SurverySystem.jpg" alt="proyecto" data-id="6" style="height:120px; width:auto;">
             </div>
             <link rel="stylesheet" href="css/styleC.css">
           </div>

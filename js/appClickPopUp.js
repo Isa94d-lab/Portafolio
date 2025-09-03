@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
               <td>
                 <div class="popUpConteiner">
                   <div class="title">
-                    <p class="titleProyect">${info.name}</p>
-                    <p class="lenguageProyect">${info.lenguage}</p>
+                    <p class="titleProyect" data-id="${info.ID}">${info.name}</p>
+                    <p class="lenguageProyect" data-id="${info.ID}">${info.lenguage}</p>
                   </div>
                   <p class="descriptionProyect">${info.description}</p>
                   <p class="collaboratorsProyect">Colaboradores: ${collaboratorsHTML}</p>
