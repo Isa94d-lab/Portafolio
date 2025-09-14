@@ -519,9 +519,13 @@ video {
 
   .ig {
     position: absolute;
-    margin-top: -548px;
+    margin-top: -569px;
     margin-left: -439px;
     height: auto;
     width: 600px;
+  }
+
+  .ig:hover {
+    cursor: pointer;
   }
 
