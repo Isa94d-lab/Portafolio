@@ -496,36 +496,29 @@ video {
     position: relative;
     margin-top: -390px;
     height: auto;
-    width: 720px;
+    width: 800px;
   }
 
   .cv:hover {
     cursor: pointer;
   }
 
-  .email {
-    position: absolute;
-    margin-top: -328px;
-    margin-right: -549px; 
-    height: auto;
-    width: 399px;
-    z-index: 5;
-
-  }
-
-  .email:hover{
-    cursor: pointer;
-  }
-
   .ig {
     position: absolute;
-    margin-top: -569px;
+    margin-top: -548px;
     margin-left: -439px;
     height: auto;
-    width: 600px;
+    width: 580px;
   }
 
   .ig:hover {
     cursor: pointer;
+  }
+
+  .email {
+    position: absolute;
+    width: 500px; 
+    margin-top: -500px;
+    margin-right: -1350px;
   }
 
