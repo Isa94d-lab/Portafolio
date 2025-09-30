@@ -505,10 +505,10 @@ video {
 
   .ig {
     position: absolute;
-    margin-top: -548px;
-    margin-left: -439px;
+    margin-top: -567px;
+    margin-left: -438px;
     height: auto;
-    width: 580px;
+    width: 450px;
   }
 
   .ig:hover {
@@ -517,8 +517,21 @@ video {
 
   .email {
     position: absolute;
-    width: 500px; 
-    margin-top: -500px;
-    margin-right: -1350px;
+    width: 600px; 
+    margin-top: -502px;
+    margin-right: -1451px;
+  }
+
+  .email:hover { 
+    cursor: pointer;
+  }
+
+  .cat {
+    position: absolute;
+    margin-top: -334px;
+    margin-left: -450px;
+    height: auto;
+    width: 500px;
+
   }
 
