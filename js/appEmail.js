@@ -12,3 +12,12 @@ Cordialmente,
     const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(destinatario)}&su=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
     window.open(gmailLink, "_blank"); 
 });
+
+
+document.getElementById("cv").addEventListener("click", function() {
+    
+    const cvv = '../pdf/IsabellaStefphaniGalvisCV.pdf';
+    window.open(cvv, "_blank");
+
+});
+
