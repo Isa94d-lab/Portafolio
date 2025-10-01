@@ -21,3 +21,10 @@ document.getElementById("cv").addEventListener("click", function() {
 
 });
 
+
+document.getElementById("ig").addEventListener("click", function() {
+    
+    const insta = "https://www.instagram.com/isa94.d/";
+    window.open(insta, "_blank");
+
+});
