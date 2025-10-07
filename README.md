@@ -1,43 +1,64 @@
-# Portafolio
-https://portafoliotry2.netlify.app/
+# Portafolio 🌟
+🔗 [stefphani-portafolio.netlify.app](https://stefphani-portafolio.netlify.app/)
 ======================================================
 
-## Descripcion 📌
-Este proyecto tiene como objetivo presentar una descripción personal que incluye información básica sobre mi experiencia laboral y mi formación en distintos lenguajes de programación, como JavaScript, Python, CSS y HTML. También ofrece una muestra de proyectos finalizados y proporciona medios de contacto, incluyendo mi perfil de GitHub, número telefónico y correo electrónico.
-Ademas de mostrar un menu de opciones con cinco secciones principales. Cada seccion permite al usuario desplazarse facilmente por la pagina de acuerdo con sus preferencias, permitiendo asi una navegacion intuitiva y organizada.
+<img src="https://github.com/user-attachments/assets/2c6258d2-f355-4a96-9912-8e6865fc1fbf" width="350px" style="display: inline-block; position: relative; top: -600px; margin-top: -600px; bottom: 500px; image-rendering: crisp-edges; image-rendering: pixelated;" align="right"/>
 
-## Funcionalidades del proyecto ⛏️
+---
 
-Al momento de renderizar el codigo HTML desde el archivo "index.html" se mostrara la página con una barra superior que incluye las siguientes opciones:
+## Descripción 📌  
+Este proyecto tiene como objetivo presentar una descripción personal que incluye información sobre mi experiencia, formación y habilidades en distintos lenguajes de programación, como **JavaScript, Python, C#, CSS y HTML**.  
 
-1. **HOME** Permite al usuario regresar a la posición original de la pagina, donde se muestra una pequeña descripcion visual
-   
-2. **ABOUT** Proporciona una mini discripcion personal, mostrando mi experiencia laboral y formacion en programacion
+El portafolio muestra una selección de proyectos finalizados o en desarrollo, además de ofrecer diversos medios de contacto, incluyendo mi perfil de **GitHub**, número telefónico y la posibilidad de **enviar un correo electrónico automáticamente**.  
 
-3. **PORTAFOLIO** Muestra algunos de los mejores proyectos realizados con distintos lenguajes de programacion 
+Asimismo, cuenta con un **menú de navegación** con tres secciones principales que permiten desplazarse fácilmente por la página, brindando una experiencia intuitiva y organizada.  
 
-4. **CONTACT** Proporciona informacion para facilitar el contacto, tales como Perfil de GitHub (en el que se pueden visualizar todos los proyectos disponibles), correo electronico (facilitando la comunicacion) y numero telefonico (alternativa de comunicacion)
+---
 
-## Tecnologias Utilisadas 🚀
-- Lenguaje: JavaScript (Se utilizó espesificamente para la funcionalidad de mostrar y ocultar imagenes)
-- Lenguaje: CSS (Se utilizó para agregar propiedades especificas a los distintos elementos definidos en el HTML)
-- Lenguaje: HTML (Se utilizó como base principal y estructura del proyecto)
+## ⚙️ Funcionalidades del proyecto  
+Al renderizar el código desde el archivo `index.html`, se presenta un **video de introducción** con un diseño visual agradable, junto con un **botón funcional** que facilita la navegación hacia la sección **“About Me”**, donde comparto información sobre mí, mis conocimientos y mis motivaciones.  
 
-## Caracteristicas 📦
-1. **Interfaz Intuitiva**
-2. **Menu superiror funcional**
-3. **Imagenes que alternan entre si**
-4. **Imagenes y enlaces encargados de dirigir a sitios especificos**
+A través de una suave **transición con degradado**, se accede a la **zona de proyectos**, en la que se pueden visualizar distintos trabajos realizados de manera individual y colaborativa, utilizando lenguajes como **JavaScript, C# y Python**.  
 
-## Instalación 📫
-1. Prerrequisitos
-- Git: Necesitaras Git para clonar el repositorio. Descargalo desde [git](https://git-scm.com/) 
-- Un editor de texto como VSCode o cualquier otro de tu preferencia
-- Instalar la extension "Live Server" en tu editor de texto (preferiblemente)
-  
-2. Codigos en la terminal para instalar el proyecto
-- git clone https://github.com/Isa94d-lab/Portafolio.git
-- cd Portafolio
+Finalmente, la **sección de contacto** se presenta mediante **Pixel Arts exclusivos**, creados especialmente para este portafolio.  
+Cada uno tiene una función específica:  
+
+- **Hojas de papel:** redirigen al **CV personal**.  
+- **Carta:** abre **Gmail** para enviar un correo automáticamente.  
+- **Cámara:** enlaza con el **perfil de Instagram**.  
+
+---
+
+## Tecnologías utilizadas 🚀  
+- **JavaScript:** implementa funcionalidades como pop-ups, manejo de datos mediante un archivo JSON, generación automática de correos y animaciones con eventos *hover*.  
+- **CSS:** define las propiedades visuales y estilos específicos de los elementos del proyecto.  
+- **HTML:** estructura principal del portafolio, base para todo el contenido visual.  
+
+---
+
+## Características principales 📦
+1. **Interfaz intuitiva y dinámica**  
+2. **Archivo JSON para almacenamiento de datos**  
+3. **Imágenes que alternan entre sí al interactuar**  
+4. **Enlaces visuales a sitios externos**  
+5. **Pixel Arts únicos, creados manualmente**  
+6. **Funcionalidad para enviar correos automáticos**  
+7. **Animaciones con diferentes duraciones y tiempos de reacción**  
+8. **Diseño visualmente atractivo y responsivo**  
+
+---
+
+## Instalación 💻
+1. 🔧 Prerrequisitos  
+- Tener **Git** instalado → [Descargar Git](https://git-scm.com/)  
+- Un editor de texto como **Visual Studio Code**  
+- Instalar la extensión **Live Server** (recomendado)  
+
+2. Clonar el repositorio  
+```bash
+git clone https://github.com/Isa94d-lab/Portafolio.git
+cd Portafolio
+```
 
 3. Ejecutar el codigo desde el archivo *"index.html"*
 
@@ -46,3 +67,6 @@ Este proyecto esta bajo la Licencia MIT. Para mas detalles [LICENSE](LICENSE)
    
 ## Realizado por ✒️
 Isabella Stephani Galvis Sandoval
+
+---
+_Gracias por ver mi portafolio, me divertí desarrollando este proyecto; pude plasmar mi personalidad y poner en práctica mis habilidades. Seguiré aprendiendo y perfeccionando mis conocimientos para convertirme en una gran desarrolladora de software ✨_
