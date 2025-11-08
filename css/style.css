@@ -329,7 +329,7 @@ video {
 
 
   .popupBox {
-    background: url("../img/imgC/FondoPopUp.gif") center / cover no-repeat; 
+    background: url("https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/FondoPopUp.gif") center / cover no-repeat; 
     background-size: contain;
     font-family: "P";
     width: 900px;

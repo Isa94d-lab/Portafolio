@@ -16,7 +16,7 @@ export const proyects = [
 
             De esta manera, los usuarios dependiendo del usuario ingresado podran visualizar o administrar y mantener organizada la información de cada entidad de forma sencilla, intuitiva y eficiente.`,
 
-            img: 'img/imgC/F1-show.png',
+            img: 'https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/F1-show.png',
 
             rpg: 'https://github.com/Isa94d-lab/F1-RACING.git',
 
@@ -50,7 +50,7 @@ export const proyects = [
 
             De esta manera, los usuarios podrán visualizar, explorar y acceder a la información organizada de cada película de forma sencilla, atractiva e intuitiva.`,
 
-            img: 'img/imgC/CineWeb-show.png',
+            img: 'https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/CineWeb-show.png',
 
             rpg: 'https://github.com/Isa94d-lab/CineWeb.git',
 
@@ -77,7 +77,7 @@ export const proyects = [
 
             Un proyecto que une técnica y creatividad en una interfaz intuitiva y llamativa.`,
 
-            img: 'img/imgC/Portafolio-show.png',
+            img: 'https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/Portafolio-show.png',
 
             rpg: 'https://github.com/Isa94d-lab/Portafolio.git',
 
@@ -106,7 +106,7 @@ export const proyects = [
 
             Un proyecto que une programación orientada a objetos y creatividad para reflejar la dinámica de una app de citas.`,
 
-            img: 'img/imgC/CampusLove-show.jpg',
+            img: 'https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/CampusLove-show.jpg',
 
             rpg: 'https://github.com/Isa94d-lab/CampusLove.git',
 
@@ -136,7 +136,7 @@ export const proyects = [
 
             Un proyecto que une buenas prácticas de desarrollo con herramientas clave para la gestión empresarial.`,
 
-            img: 'img/imgC/InventoryManagment-show.jpg',
+            img: 'https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/InventoryManagment-show.jpg',
 
             rpg: 'https://github.com/Isa94d-lab/InventoryManagement.git',
 
@@ -166,13 +166,13 @@ export const proyects = [
 
             Un sistema que integra eficiencia, seguridad y escalabilidad en la gestión automotriz. 🚗⚙️`,
 
-            img: 'img/imgC/SistemaAutomotriz-show.jpg',
+            img: 'https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/SistemaAutomotriz-show.jpg',
 
             rpg: 'https://github.com/LauraVargas22/SistemaAutomotriz.git',
 
             /* Se creo un array que permitira redirigir al perfil de los colaboradores */
 
-            collaborators2: ['https://github.com/Isa94d-lab', 'https://github.com/LauraVargas22', 'https://github.com/hdvalen', 'https://github.com/amdresw'],
+            collaborators2: ['https://github.com/LauraVargas22', 'https://github.com/Isa94d-lab', 'https://github.com/hdvalen', 'https://github.com/amdresw'],
 
             collaborators: ['LauraVargas22', 'Isa94d-lab', 'Hdvalen', 'Amdresw'] 
 
@@ -194,7 +194,7 @@ export const proyects = [
 
             Un juego clásico con un giro innovador para hacerlo más desafiante y divertido. ✨`,
 
-            img: 'img/imgC/PiedraPapelOTijera-show.png',
+            img: 'https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/PiedraPapelOTijera-show.png',
 
             rpg: 'https://github.com/Isa94d-lab/Piedra-papel-o-tijera.git',
 
@@ -223,7 +223,7 @@ export const proyects = [
 
             Un sistema sencillo pero completo para la gestión de ligas de fútbol. 🏆`,
 
-            img: 'img/imgC/LigaBetPlay-show.png',
+            img: 'https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/LigaBetPlay-show.png',
 
             rpg: 'https://github.com/Isa94d-lab/LIga-BetPlay.git',
 
@@ -251,7 +251,7 @@ export const proyects = [
 
             Sollicitudin fames suspendisse bibendum hac rhoncus laoreet nec mattis ultricies interdum per. ✨`,
 
-            img: 'img/imgC/WorkInProgres-show.jpg',
+            img: 'https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/WorkInProgres-show.jpg',
 
             rpg: 'https://github.com/Isa94d-lab',
 

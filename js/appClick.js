@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="PopUpConteiner">
             <div class="Title">JavaScript</div>
             <div class="Icons">
-              <img src="img/imgC/JavaScript-F1.jpg" alt="proyecto" data-id="1" style="height:120px; width:auto;">
-              <img src="img/imgC/JavaScript-CineWeb.jpg" alt="proyecto" data-id="2" style="height:120px; width:auto;">
-              <img src="img/imgC/JavaScript-Portafolio.jpg" alt="proyecto" data-id="3" style="height:120px; width:auto;">
+              <img src="https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/JavaScript-F1.jpg" alt="proyecto" data-id="1" style="height:120px; width:auto;">
+              <img src="https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/JavaScript-CineWeb.jpg" alt="proyecto" data-id="2" style="height:120px; width:auto;">
+              <img src="https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/JavaScript-Portafolio.jpg" alt="proyecto" data-id="3" style="height:120px; width:auto;">
             </div>
             <link rel="stylesheet" href="css/styleC.css">
           </div>
@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="PopUpConteiner">
             <div class="Title">C#</div>
             <div class="Icons">
-              <img src="img/imgC/C-CampusLove.jpg" alt="proyecto" data-id="4" style="height:120px; width:auto;">
-              <img src="img/imgC/C-Maleta.jpg" alt="proyecto" data-id="5" style="height:120px; width:auto;">
-              <img src="img/imgC/C-SurverySystem.jpg" alt="proyecto" data-id="6" style="height:120px; width:auto;">
+              <img src="https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/C-CampusLove.jpg" alt="proyecto" data-id="4" style="height:120px; width:auto;">
+              <img src="https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/C-Maleta.jpg" alt="proyecto" data-id="5" style="height:120px; width:auto;">
+              <img src="https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/C-SurverySystem.jpg" alt="proyecto" data-id="6" style="height:120px; width:auto;">
             </div>
             <link rel="stylesheet" href="css/styleC.css">
           </div>
@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="PopUpConteiner">
             <div class="Title">Python</div>
             <div class="Icons">
-              <img src="img/imgC/Python-PiedraPapelTijera.jpg" alt="proyecto" data-id="7" style="height:120px; width:auto;">
-              <img src="img/imgC/Python-LigaBetplay.jpg" alt="proyecto" data-id="8" style="height:120px; width:auto;">
-              <img src="img/imgC/Python-Question.jpg" alt="proyecto" data-id="9" style="height:120px; width:auto;">
+              <img src="https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/Python-PiedraPapelTijera.jpg" alt="proyecto" data-id="7" style="height:120px; width:auto;">
+              <img src="https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/Python-LigaBetplay.jpg" alt="proyecto" data-id="8" style="height:120px; width:auto;">
+              <img src="https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgC/Python-Question.jpg" alt="proyecto" data-id="9" style="height:120px; width:auto;">
             </div>
             <link rel="stylesheet" href="css/styleC.css">
           </div>

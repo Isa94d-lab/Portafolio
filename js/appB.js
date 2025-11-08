@@ -25,7 +25,7 @@ document.body.addEventListener("click", (e) => {
 
   // Crea una imagen en la posición del clic
   const img = document.createElement("img");
-  img.src = "img/imgB/TryError.png";
+  img.src = "https://raw.githubusercontent.com/Isa94d-lab/Portafolio-assets/main/img/imgB/TryError.png";
   img.style.position = "absolute";
   img.style.width = "150px";
   img.style.left = `${e.clientX - 50}px`; // Ajuste horizontal
